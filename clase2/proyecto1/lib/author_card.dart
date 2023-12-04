@@ -1,5 +1,7 @@
+
 import 'package:flutter/material.dart';
 import 'package:proyecto1/social_food_theme.dart';
+
 
 class AuthorCard extends StatefulWidget {
   const AuthorCard({Key? key}) : super(key: key);
@@ -23,10 +25,10 @@ class _AuthorCardState extends State<AuthorCard> {
             Row(
               children: [
                 Padding(
-                  padding: EdgeInsets.only(right: 16.0),
+                  padding: EdgeInsets.only(right: 10.0),
                   child: CircleAvatar(
                     radius: 30.0,
-                    backgroundImage: AssetImage('author_katz.jpeg'),
+                    backgroundImage: AssetImage('assets/author_katz.jpeg'),
                   ),
                 ),
                 Column(
@@ -54,11 +56,11 @@ class _AuthorCardState extends State<AuthorCard> {
                         ? Icon(
                       Icons.favorite,
                       color: Colors.black,
-                    ) // Si es favorito, muestra el corazón lleno
+                    )
                         : Icon(
                       Icons.favorite_border,
                       color: Colors.black,
-                    ), // Si no es favorito, muestra el corazón vacío
+                    ),
                   ),
                 ),
               ],
