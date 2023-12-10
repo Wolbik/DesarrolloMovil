@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/clase1/tocar_musica/build" />
+      <excludeFolder url="file://$MODULE_DIR$/clase1/tocar_musica/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/clase1/tocar_musica/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/clase3/proyecto_chat/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/clase3/proyecto_chat/build" />
+      <excludeFolder url="file://$MODULE_DIR$/clase3/proyecto_chat/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/clase3/recipe/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/clase3/recipe/build" />
+      <excludeFolder url="file://$MODULE_DIR$/clase3/recipe/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/clase4/delivery_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/clase4/delivery_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/clase4/delivery_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/clase2/proyecto1/build" />
+      <excludeFolder url="file://$MODULE_DIR$/clase2/proyecto1/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/clase2/proyecto1/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/clase1/aplicacion_ejemplo1/build" />
+      <excludeFolder url="file://$MODULE_DIR$/clase1/aplicacion_ejemplo1/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/clase1/aplicacion_ejemplo1/.dart_tool" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
