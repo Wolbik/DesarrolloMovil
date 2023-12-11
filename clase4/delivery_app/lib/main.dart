@@ -22,7 +22,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       getPages: [
         GetPage(name: '/', page: () => LoginPage(),),
-        GetPage(name: '/register', page: () => RegisterPage(),)
+        GetPage(name: '/register', page: () => RegisterPage(),),
+        GetPage(name: '/login', page: () => LoginPage(),)
       ],
     );
   }

@@ -132,6 +132,7 @@ class _LoginPageState extends State<LoginPage> {
   //Campo de entrada de email
   Widget _textLogin(){
     return TextField(
+      controller: controller.emailController,
       keyboardType: TextInputType.emailAddress,
       decoration: InputDecoration(
         hintText: "correo electronico",
@@ -143,6 +144,7 @@ class _LoginPageState extends State<LoginPage> {
   //Campo de entrada de contraseña
   Widget _textPassword(){
     return TextField(
+      controller: controller.passwordController,
       obscureText: true,
       keyboardType: TextInputType.text,
       decoration: InputDecoration(
