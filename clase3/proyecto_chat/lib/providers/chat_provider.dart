@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
+import 'package:proyecto_chat/config/helper/request.dart';
 
 import '../entities/message.dart';
 
 class ChatProvider extends ChangeNotifier{
+
+  final request = Request();
 
   //crear un controlador para el ListView
   final  scrollController= ScrollController();
@@ -21,7 +25,15 @@ class ChatProvider extends ChangeNotifier{
     final message = Message(text: text, fromWho: FromWho.me);
     messageList.add(message);
 
+    if(text.endsWith('?')){
+      //llamado API
+      getYourAnswer();
+    }
+
     notifyListeners();
+    SchedulerBinding.instance.addPostFrameCallback((timeStamp) {
+      moveScrollBottom();
+    });
   }
 
   void moveScrollBottom(){
@@ -30,6 +42,15 @@ class ChatProvider extends ChangeNotifier{
       duration: Duration(milliseconds: 300),
       curve: Curves.easeOut,
     );
+  }
+
+  Future<void> getYourAnswer() async {
+    final yourAnswer = await request.getAnswer();
+    messageList.add(yourAnswer);
+    notifyListeners();
+    SchedulerBinding.instance.addPostFrameCallback((timeStamp) {
+      moveScrollBottom();
+    });
   }
 
 }
