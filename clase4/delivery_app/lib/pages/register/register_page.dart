@@ -20,20 +20,25 @@ class _RegisterPageState extends State<RegisterPage> {
       body: Stack(
         children: [
           _boxCover(context),
-          SingleChildScrollView(
-            child: Column(
-              children: [
-                _imageAvatar(),
-                _textAppName(),
-                _boxForm(context),
-              ],
+          SafeArea(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      ElevatedButton(
+                          onPressed: controller.goToLoginPage,
+                          child: Icon(Icons.arrow_back)
+                      )
+                    ],
+                  ),
+                  _textAppName(),
+                  _boxForm(context),
+                ],
+              ),
             ),
           )
         ],
-      ),
-      bottomNavigationBar: SizedBox(
-          height: 50,
-          child: _textHaveAccount()
       ),
     );
   }
@@ -60,7 +65,7 @@ class _RegisterPageState extends State<RegisterPage> {
         right: 50,
       ),
       padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
-      height: MediaQuery.of(context).size.height * 0.55,
+      height: MediaQuery.of(context).size.height * 0.8,
       decoration: BoxDecoration(
         color: Colors.white,
         boxShadow: [
@@ -75,6 +80,7 @@ class _RegisterPageState extends State<RegisterPage> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           _textYourInfo(),
+          _imageAvatar(),
           SizedBox(
             height: 8,
           ),
@@ -216,38 +222,19 @@ class _RegisterPageState extends State<RegisterPage> {
     return Container(
       alignment: Alignment.center,
       margin: EdgeInsets.only(top: 30, bottom: 10),
-      child: CircleAvatar(
-        radius: 100,
-        backgroundColor: Colors.red, // Puedes ajustar el color de fondo según tus necesidades
-        child: Icon(
-          Icons.person,
-          size: 100,
-          color: Colors.white,
+      child: GestureDetector(
+        child: CircleAvatar(
+          radius: 70,
+          backgroundColor: Colors.red, // Puedes ajustar el color de fondo según tus necesidades
+          child: Icon(
+            Icons.person,
+            size: 50,
+            color: Colors.white,
+          ),
         ),
+        onTap: () {},
       ),
     );
   }
-
-  Widget _textHaveAccount(){
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Text('Tienes cuenta?'),
-        SizedBox(width: 10),
-        GestureDetector(
-            onTap: () {
-              return controller.goToLoginPage();
-            },
-            child: Text(
-              'LogIn',
-              style: TextStyle(
-                  color: Colors.redAccent,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 17
-              ),
-            )
-        ),
-      ],
-    );
-  }
 }
+
