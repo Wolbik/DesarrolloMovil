@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "147187461072",
+    "project_id": "multi-store-app-01",
+    "storage_bucket": "multi-store-app-01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147187461072:android:bce67c58153b38d63d67d5",
+        "android_client_info": {
+          "package_name": "com.rurbaez.tienda_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYwptVlBN83J-Y6hPBvUHharZ4a7Rk_wY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
