@@ -17,7 +17,10 @@ class SearchFieldWidget extends StatelessWidget {
             border: OutlineInputBorder(
                 borderSide: BorderSide.none
             ),
-            prefixIcon: SvgPicture.asset('assets/icons/search.svg')
+            prefixIcon: Padding(
+              padding: const EdgeInsets.all(14.0),
+              child: SvgPicture.asset('assets/icons/search.svg'),
+            )
         ),
       ),
     );
