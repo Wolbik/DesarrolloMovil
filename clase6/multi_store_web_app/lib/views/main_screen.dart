@@ -1,13 +1,14 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_admin_scaffold/admin_scaffold.dart';
-import 'package:multi_store_web_app/views/site_screens/categories_screen.dart';
-import 'package:multi_store_web_app/views/site_screens/dashboard_screen.dart';
-import 'package:multi_store_web_app/views/site_screens/orders_screen.dart';
-import 'package:multi_store_web_app/views/site_screens/products_screen.dart';
-import 'package:multi_store_web_app/views/site_screens/uploadbanner_screen.dart';
-import 'package:multi_store_web_app/views/site_screens/vendors_screen.dart';
-import 'package:multi_store_web_app/views/site_screens/withdrawal_screen.dart';
+import 'package:multi_store_web_app/views/side_screens/categories_screen.dart';
+import 'package:multi_store_web_app/views/side_screens/dashboard_screen.dart';
+import 'package:multi_store_web_app/views/side_screens/orders_screen.dart';
+import 'package:multi_store_web_app/views/side_screens/products_screen.dart';
+import 'package:multi_store_web_app/views/side_screens/uploadbanner_screen.dart';
+import 'package:multi_store_web_app/views/side_screens/vendors_screen.dart';
+import 'package:multi_store_web_app/views/side_screens/withdrawal_screen.dart';
+
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
